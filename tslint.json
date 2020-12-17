@@ -121,9 +121,9 @@
         "check-typecast"
       ]
     },
-    "component-class-suffix": true,
+    "component-class-suffix": false,
     "contextual-lifecycle": true,
-    "directive-class-suffix": true,
+    "directive-class-suffix": false,
     "no-conflicting-lifecycle": true,
     "no-host-metadata-property": true,
     "no-input-rename": true,
@@ -140,13 +140,15 @@
       true,
       "attribute",
       "app",
-      "camelCase"
+      "camelCase",
+      "element"
     ],
     "component-selector": [
-      true,
+      false,
       "element",
       "app",
-      "kebab-case"
+      "kebab-case",
+      ""
     ]
   }
 }
