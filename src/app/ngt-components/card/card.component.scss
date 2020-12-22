@@ -1,0 +1,14 @@
+:host ::ng-deep c2c-card-title {
+    @apply text-lg;
+    @apply font-bold;
+  }
+  
+  :host ::ng-deep [c2c-card-avatar] {
+    @apply w-10;
+    @apply h-10;
+    @apply m-1;
+    @apply mr-3;
+    @apply float-left;
+    @apply rounded-full;
+  }
+  
