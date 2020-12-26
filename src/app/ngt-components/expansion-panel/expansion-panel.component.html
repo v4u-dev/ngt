@@ -1,14 +1,24 @@
-<!-- <p>expansion-panel works!</p> -->
-
+<!-- refer the comments below -->
 <div class="w-3/4 mx-auto shadow rounded-md flex flex-col items-left bg-gray-100 px-5 py-3">
     <div class=" flex flex-row justify-between" style="cursor: pointer;" (click)="isHidden = !isHidden">
         <ng-content select="expansion-panel-title"></ng-content>
-        <img src="../../../assets/downarrow.svg">
+        <img src="../../../assets/downarrow.svg" *ngIf="isHidden">
+        <!-- replace it with up arrow -->
+        <img src="../../../assets/downarrow.svg" *ngIf="!isHidden">
     </div>
-    <div class="py-4"  [hidden]="isHidden">
+    <div class="py-4" [hidden]="isHidden">
         <ng-content></ng-content>
     </div>
     <div [hidden]="isHidden">
         <ng-content select="expansion-panel-footer"></ng-content>
     </div>
-   </div>
+</div>
+
+
+<!-- apply the scroll effect which need to be replicated like the angular material -->
+<!-- resources -->
+<!--first prefered resource -->
+<!-- https://stackoverflow.com/questions/33931100/expand-div-on-click-with-smooth-animation/33931219 -->
+<!-- https://www.xspdf.com/resolution/53430617.html -->
+
+<!-- apply the upward arraow svg when expansion pannel is kept opened -->
