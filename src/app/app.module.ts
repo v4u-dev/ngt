@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { C2cCardModule } from './ngt-components/card/card.module';
-import { ButtonModule } from './ngt-components/button/button.module'
+import { ButtonModule } from './ngt-components/button/button.module';
+import {CheckboxModule} from './ngt-components/checkbox/checkbox.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ButtonModule } from './ngt-components/button/button.module'
     BrowserModule,
     AppRoutingModule,
     C2cCardModule,
-    ButtonModule
+    ButtonModule,
+    CheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
