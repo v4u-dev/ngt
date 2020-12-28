@@ -1,0 +1,8 @@
+<div>
+    <img src="../../../assets/right-arrow-angle.svg" [class]="isExpanded ? 'rotate-down': 'rotate-right'"  style="height: 10px;display: inline;" (click)="toggleArrow()" alt="no-img">
+    <!-- For nested-tree-nodes --><ng-content></ng-content>
+    <div *ngIf="isExpanded">
+        <ng-content select='c2c-tree-node'></ng-content>
+    </div>
+</div>
+

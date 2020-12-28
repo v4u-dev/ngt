@@ -1,0 +1,40 @@
+<!-- <p>tree works!</p>
+
+<div *ngFor='let i of data'>
+    <span *ngIf='i.children.length && myIcon===">"'>
+        <button onclick="funOpen(i)">{{myIcon}}</button>
+    </span> {{i.name}}
+    <span *ngIf='i.children.length && myIcon==="V"'>
+        <button onclick="funClose(i)">{{myIcon}}</button>
+    </span>
+</div> -->
+
+
+<!-- 
+<div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+    <div class="md:flex">
+      <div class="md:flex-shrink-0">    
+
+      </div>
+      <div class="p-8">
+        <div class="mb-4 text-grey-dark text-sm">
+
+        </div>
+      </div>
+    </div>
+</div>
+   -->
+
+<!-- 
+<div class="container p-8">
+    <div style="margin-bottom: 50px;color: red;">
+        <ng-content select="c2c-nested-tree-node"></ng-content>
+    </div>
+     <div class="text-red bg-black" style="color:black;">
+        <ng-content select="c2c-tree-node"></ng-content>
+     </div>     
+</div> -->
+
+<div>
+    <ng-content></ng-content>
+</div>
