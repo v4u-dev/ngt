@@ -1,34 +1,18 @@
 :host ::ng-deep c2c-tree-node {
-    // @apply w-10;
-    // @apply h-10;
-    // @apply m-1;
-    // @apply mr-3;
-    // @apply float-left;
-    // @apply rounded-full;
     display: flex;
-    color: black;
     padding-left: 50px;
   }
   
 
 :host ::ng-deep c2c-nested-tree-node {
-    // @apply w-10;
-    // @apply h-10;
-    // @apply m-1;
-    // @apply mr-3;
-    // @apply float-left;
-    // @apply rounded-full;
-    // margin-left: 50px;
     display: flex;
     flex-direction: column;
   }
   
 
  :host ::ng-deep .rotate-down{
-    // transform:rotateY(90deg);
     transform: rotate(90deg);
     transition: 0.1s;
-    // transition: transform 1s linear;
   }
 
   :host ::ng-deep .rotate-right{

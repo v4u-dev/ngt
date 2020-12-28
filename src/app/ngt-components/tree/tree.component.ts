@@ -35,13 +35,13 @@ export class C2cTreeNode {}
 
 export class C2cNestedTreeNode {
   isExpanded: Boolean = false;
-  RightArrow: String = "../../../assets/right-arrow-angle.svg";
-  DownArrow: String = "../../../assets/down-arrow.svg";
-  imgSrc : String = this.RightArrow;
-  toggleArrow() {
-    console.log('Toggled!')
-    this.isExpanded = ! this.isExpanded;
-    if(this.isExpanded===true) this.imgSrc = this.DownArrow;
-    else this.imgSrc = this.RightArrow;
-  }
+  // RightArrow: String = "../../../assets/right-arrow-angle.svg";
+  // DownArrow: String = "../../../assets/down-arrow.svg";
+  // imgSrc : String = this.RightArrow;
+  // toggleArrow() {
+  //   console.log('Toggled!')
+  //   this.isExpanded = ! this.isExpanded;
+  //   if(this.isExpanded===true) this.imgSrc = this.DownArrow;
+  //   else this.imgSrc = this.RightArrow;
+  // }
 }
