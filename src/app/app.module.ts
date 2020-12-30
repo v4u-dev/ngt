@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { C2cCardModule } from './ngt-components/card/card.module';
 import { ButtonModule } from './ngt-components/button/button.module';
 import {CheckboxModule} from './ngt-components/checkbox/checkbox.module';
+import { InputModule } from './ngt-components/input/input.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {CheckboxModule} from './ngt-components/checkbox/checkbox.module';
     AppRoutingModule,
     C2cCardModule,
     ButtonModule,
-    CheckboxModule
+    CheckboxModule,
+    InputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
