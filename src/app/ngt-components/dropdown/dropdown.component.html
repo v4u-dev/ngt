@@ -1,24 +1,17 @@
-<!-- component -->
-<div class="flex justify-center p-12">
-    <!-- Dropdown -->
-    <div class="relative">
-        <button class="block h-12 w-12 rounded-full overflow-hidden focus:outline-none">
-            <img class="h-full w-full object-cover" src="https://eu.ui-avatars.com/api/?name=John&size=1000"
-                alt="avatar">
+<style>
+    .dropdown:hover > .dropdown-content {
+        display: block;
+    }
+    </style>
+    
+    <div class="dropdown inline-block relative">
+        <button class="bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
+            <span>Dropdown </span>
         </button>
-        <!-- Dropdown Body -->
-        <div class="absolute right-0 w-40 mt-2 py-2 bg-white border rounded shadow-xl">
-            <a href="#"
-                class="transition-colors duration-200 block px-4 py-2 text-normal text-gray-900 rounded hover:bg-purple-500 hover:text-white">Settings</a>
-            <div class="py-2">
-                
-            </div>
-            <a href="#"
-                class="transition-colors duration-200 block px-4 py-2 text-normal text-gray-900 rounded hover:bg-purple-500 hover:text-white">
-                Logout
-            </a>
-        </div>
-        <!-- // Dropdown Body -->
+        <ul class="dropdown-content absolute hidden text-gray-700 pt-1" style="cursor: pointer;">
+            <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" >
+                <ng-content></ng-content>
+
+            </a></li>
+        </ul>
     </div>
-    <!-- // Dropdown -->
-</div>
