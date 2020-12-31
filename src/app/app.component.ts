@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngt';
+  public tableHeadings=['head1','head2','head3'];
+  public tablecontent=['con1','co2','con3'];
 }

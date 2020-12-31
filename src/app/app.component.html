@@ -6,3 +6,8 @@
     <c2c-card-content>This is my card desc</c2c-card-content>
   
   </c2c-card>
+
+  <ngt-table>
+    <th *ngFor="let head of tableHeadings">{{head}}</th>
+    <td *ngFor="let data of tablecontent">{{data}}</td>
+  </ngt-table>
