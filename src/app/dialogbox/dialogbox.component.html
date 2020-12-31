@@ -1,0 +1,16 @@
+<!-- <p>dialogbox works!</p> -->
+
+<div class="fixed w-1/2  inset-y-1/3 inset-x-1/4 md:w-1/3 md:top-1/3 md:left-1/3 rounded-sm">
+    <div class=" bg-black-200 opacity-40 fixed inset-0 rounded-sm shadow-2xl"></div>
+    <div class="relative max-h-full  opacity-100 bg-white  p-5 rounded-sm border shadow-2xl flex flex-col md:text-base text-sm " id='animation'>
+        <div>
+            <ng-content select="c2c-dialogbox-title"></ng-content>
+        </div>
+        <div class="py-2 flex  text-sm">
+            <ng-content select="c2c-dialogbox-content"></ng-content>
+        </div>
+        <footer class="py-1 pt-4 flex flex-col">
+            <ng-content select="c2c-dialogbox-actions" (click)="goBack()"></ng-content>
+        </footer>
+    </div>
+</div>

@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngt';
+  public message = "bala";
+  buttonEvent(event) {
+    console.log(event);
+  }
+
+public popup=false;
+openPopup(){
+  this.popup=true;
+}
+closePopup(){
+  this.popup=false;
+}
 }
