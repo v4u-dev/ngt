@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ngt';
   buttonClicked(){
-    console.log("button is clicked")
+    console.log("button is clicked");
   }
   checkboxCLicked(){
     console.log("checkbox clicked");
