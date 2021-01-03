@@ -1,25 +1,29 @@
 <c2c-card>
 
-    <img c2c-card-avatar src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80">
+  <img c2c-card-avatar
+    src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80">
 
-    <c2c-card-title>Title 123</c2c-card-title>
-    <c2c-card-content>This is my card desc</c2c-card-content>
+  <c2c-card-title>Title 123</c2c-card-title>
+  <c2c-card-content>This is my card desc</c2c-card-content>
 
 </c2c-card>
 
 
-<button (click)="openPopup()" class=" mr-5 bg-gray-200 hover:bg-blue-700 hover:text-white border border-gray-400 text-blue-700 font-bold py-2 px-6 rounded-lg">
+<button (click)="openPopup()"
+  class=" mr-5 bg-gray-200 hover:bg-blue-700 hover:text-white border border-gray-400 text-blue-700 font-bold py-2 px-6 rounded-lg">
   Show Popup
 </button>
 
 
 <c2c-dialog-box *ngIf="popup" class="left-1/4 bg-gray-500">
-    <c2c-dialogbox-title class="font-bold text-black md:text-base text-sm">
-        Title </c2c-dialogbox-title>
-    <c2c-dialogbox-content>This is my dialogbox content,write something here...
-    </c2c-dialogbox-content>
-    <c2c-dialogbox-actions>
-        <button (click)="closePopup()" class=" focus:outline-none py-1 px-1 md:py-2 md:px-3 w-16 md:w-20 mr-2 bg-gray-100 hover:bg-gray-200 text-black rounded-sm ">Cancel</button>
-        <button (click)="closePopup()" class="focus:outline-none py-1 px-1 md:py-2 md:px-2 w-12 md:w-14 mr-2 bg-gray-100 hover:bg-gray-200 text-black rounded-sm ">OK</button>
-    </c2c-dialogbox-actions>
+  <c2c-dialogbox-title class="font-bold text-black md:text-base text-sm">
+    Title </c2c-dialogbox-title>
+  <c2c-dialogbox-content>This is my dialogbox content,write something here...
+  </c2c-dialogbox-content>
+  <c2c-dialogbox-actions>
+    <button (click)="closePopup()"
+      class=" focus:outline-none py-1 px-1 md:py-2 md:px-3 w-16 md:w-20 mr-2 bg-gray-100 hover:bg-gray-200 text-black rounded-sm ">Cancel</button>
+    <button (click)="closePopup()"
+      class="focus:outline-none py-1 px-1 md:py-2 md:px-2 w-12 md:w-14 mr-2 bg-gray-100 hover:bg-gray-200 text-black rounded-sm ">OK</button>
+  </c2c-dialogbox-actions>
 </c2c-dialog-box>

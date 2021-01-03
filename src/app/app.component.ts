@@ -12,11 +12,11 @@ export class AppComponent {
     console.log(event);
   }
 
-public popup=false;
-openPopup(){
-  this.popup=true;
-}
-closePopup(){
-  this.popup=false;
-}
+  public popup = false;
+  openPopup() {
+    this.popup = true;
+  }
+  closePopup() {
+    this.popup = false;
+  }
 }
