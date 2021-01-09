@@ -1,10 +1,10 @@
-:host ::ng-deep c2c-tree-node {
+:host ::ng-deep ngt-tree-node {
     display: flex;
     padding-left: 50px;
   }
   
 
-:host ::ng-deep c2c-nested-tree-node {
+:host ::ng-deep ngt-nested-tree-node {
     display: flex;
     flex-direction: column;
   }

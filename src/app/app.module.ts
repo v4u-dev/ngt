@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { C2cCardModule } from './ngt-components/card/card.module';
-import { C2cTreeModule } from './ngt-components/tree/tree.module';
+import { NgtTreeModule } from './ngt-components/tree/tree.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { C2cTreeModule } from './ngt-components/tree/tree.module';
     BrowserModule,
     AppRoutingModule,
     C2cCardModule,
-    C2cTreeModule
+    NgtTreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

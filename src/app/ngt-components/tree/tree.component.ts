@@ -1,7 +1,7 @@
 import { Component, OnInit, Directive, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'c2c-tree',
+  selector: 'ngt-tree',
   templateUrl: './tree.component.html',
   styleUrls: ['./tree.component.scss']
 })
@@ -16,9 +16,9 @@ export class TreeComponent implements OnInit {
 }
 
 @Directive({
-  selector: 'c2c-tree-node',
+  selector: 'ngt-tree-node',
 })
-export class C2cTreeNode {}
+export class NgtTreeNode {}
 
 // @Directive({
 //   selector: 'c2c-nested-tree-node',
@@ -27,13 +27,13 @@ export class C2cTreeNode {}
 
 
 @Component({
-  selector: 'c2c-nested-tree-node',
+  selector: 'ngt-nested-tree-node',
   templateUrl: 'nested.tree.html',
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 
-export class C2cNestedTreeNode {
+export class NgtNestedTreeNode {
   isExpanded: Boolean = false;
   // RightArrow: String = "../../../assets/right-arrow-angle.svg";
   // DownArrow: String = "../../../assets/down-arrow.svg";
