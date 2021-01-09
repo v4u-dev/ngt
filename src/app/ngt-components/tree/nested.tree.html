@@ -1,5 +1,5 @@
 <div>
-    <img src="../../../assets/right-arrow-angle.svg" [class]="isExpanded ? 'rotate-down': 'rotate-right'"  style="height: 10px;display: inline;" (click)="isExpanded = ! isExpanded" alt="no-img">
+    <img src="../../../assets/right-arrow-angle.svg" [class]="isExpanded ? 'rotate-down': 'rotate-right'"  style="height: 10px;display: inline;cursor: pointer;" (click)="isExpanded = ! isExpanded" alt="no-img">
     <!-- For nested-tree-nodes --> <a (click)="isExpanded = ! isExpanded" style="cursor: pointer;"> <ng-content></ng-content> </a> 
     <div *ngIf="isExpanded">
         <ng-content select='ngt-tree-node'></ng-content>
