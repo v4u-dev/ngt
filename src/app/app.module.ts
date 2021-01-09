@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { C2cCardModule } from './ngt-components/card/card.module';
 // import { DialogboxComponent } from './dialogbox/dialogbox.component';
-import {DialogboxModule} from 'src/app/ngt-components/card/dialogbox/dialogbox.module';
+import {DialogboxModule} from 'src/app/ngt-components/dialogbox/dialogbox.module';
 
 @NgModule({
   declarations: [
