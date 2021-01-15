@@ -1,10 +1,9 @@
 
   <link
   rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <ul  class="flex mt-10 ml-10">
-    <li    class="mr-3 font-semi-bold text-lg cursor-pointer tracking-wide font-sans tab-item" *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active-tab]="tab.active">
+    <li style="margin-right:1.5rem" class="font-semi-bold text-lg cursor-pointer tracking-wide font-sans tab-item" *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active-tab]="tab.active">
         {{tab.tabTitle}}
     </li>
 </ul>
