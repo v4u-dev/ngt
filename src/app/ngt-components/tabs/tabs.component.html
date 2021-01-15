@@ -1,7 +1,9 @@
-<ul class="flex mt-10 ml-10">
-    <li class="mr-3 font-semi-bold text-lg cursor-pointer tracking-wide font-sans tab-item" *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active-tab]="tab.active">
+
+
+<ul  class="flex mt-10 ml-10">
+    <li  class="mr-3 font-semi-bold text-lg cursor-pointer tracking-wide font-sans tab-item" *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active-tab]="tab.active">
         {{tab.tabTitle}}
     </li>
 </ul>
 <hr class=" text-gray-50 text-sm">
-<ng-content></ng-content>
+<ng-content ></ng-content>
