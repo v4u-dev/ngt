@@ -1,0 +1,20 @@
+.tab-button
+{
+    @apply mr-2;
+    @apply font-semibold;
+    @apply tracking-wide;
+    @apply text-lg;
+}
+.active-tab
+{
+   @apply text-blue;
+   @apply border-blue;
+   @apply border-b;
+   border-bottom-width:3.5px;
+   border-bottom-left-radius:3px;
+   border-bottom-right-radius:3px;
+   font-weight: bold;
+   letter-spacing: 1.2;
+}
+
+

@@ -53,7 +53,7 @@ module.exports = {
             // Font family
             fontFamily: {
                 sans: [
-                    'poppins'
+                    'poppins,sans-serif'
                 ]
             },
             //Border radius
