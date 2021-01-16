@@ -4,10 +4,10 @@
         <ng-content select="expansion-panel-title"></ng-content>
         <img src="../../../assets/downarrow.svg"  *ngIf="isHidden">
         <!-- replace it with up arrow -->
-        <img src="../../../assets/downarrow.svg" *ngIf="!isHidden">
+        <img src="../../../assets/upward.svg" *ngIf="!isHidden">
     </div>
     <div class="py-4" [hidden]="isHidden">
-        <ng-content></ng-content>
+        <ng-content ></ng-content>
     </div>
     <div [hidden]="isHidden"  class="expansioncontent">
         <ng-content select="expansion-panel-footer"></ng-content>
