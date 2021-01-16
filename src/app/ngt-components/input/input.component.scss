@@ -1,0 +1,5 @@
+input:focus{
+    border: 5px solid;
+    border-image: linear-gradient(to right, violet, lightblue);
+    border-image-slice: 1;
+    }
