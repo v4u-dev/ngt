@@ -2,14 +2,14 @@
 <div class="w-3/4 mx-auto shadow rounded-md flex flex-col items-left bg-gray-100 px-5 py-3">
     <div class=" flex flex-row justify-between" style="cursor: pointer;" (click)="isHidden = !isHidden">
         <ng-content select="expansion-panel-title"></ng-content>
-        <img src="../../../assets/downarrow.svg" *ngIf="isHidden">
+        <img src="../../../assets/downarrow.svg"  *ngIf="isHidden">
         <!-- replace it with up arrow -->
         <img src="../../../assets/downarrow.svg" *ngIf="!isHidden">
     </div>
     <div class="py-4" [hidden]="isHidden">
         <ng-content></ng-content>
     </div>
-    <div [hidden]="isHidden">
+    <div [hidden]="isHidden"  class="expansioncontent">
         <ng-content select="expansion-panel-footer"></ng-content>
     </div>
 </div>
