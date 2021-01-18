@@ -6,10 +6,10 @@
         <!-- replace it with up arrow -->
         <img src="../../../assets/upward.svg" *ngIf="!isHidden">
     </div>
-    <div class="py-4" [hidden]="isHidden">
+    <div class="py-4" *ngIf="isHidden">
         <ng-content ></ng-content>
     </div>
-    <div [hidden]="isHidden"  class="expansioncontent">
+    <div *ngIf="isHidden"  class="expansioncontent">
         <ng-content select="expansion-panel-footer"></ng-content>
     </div>
 </div>
