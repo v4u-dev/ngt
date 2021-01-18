@@ -1,18 +1,20 @@
 <!-- refer the comments below -->
 <div class="w-3/4 mx-auto shadow rounded-md flex flex-col items-left bg-gray-100 px-5 py-3">
-    <div class=" flex flex-row justify-between " style="cursor: pointer;" (click)="isHidden = !isHidden">
+    <div class=" flex flex-row justify-between " style="cursor: pointer;" (click)="onSwitch()">
         <ng-content select="expansion-panel-title"></ng-content>
-        <img src="../../../assets/downarrow.svg"  *ngIf="isHidden">
+        <img [@animationRotate]="sStatus" src="../../../assets/downarrow.svg"  >
         <!-- replace it with up arrow -->
-        <img src="../../../assets/upward.svg" *ngIf="!isHidden">
+        <!-- <img src="../../../assets/upward.svg" *ngIf="!isHidden"> -->
     </div>
 
+ <div  [@animationShowHide]="sStatus">
     <div class="py-4 " [hidden]="isHidden">
-    <ng-content ></ng-content>
-    </div>
-    <div [hidden]="isHidden"  class="expansioncontent">
-        <ng-content select="expansion-panel-footer"></ng-content>
-    </div>
+        <ng-content ></ng-content>
+        </div>
+        <div [hidden]="isHidden"  class="expansioncontent">
+            <ng-content select="expansion-panel-footer"></ng-content>
+        </div>
+ </div>
 </div>
 
 
