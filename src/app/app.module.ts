@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { C2cCardModule } from './ngt-components/card/card.module';
@@ -14,7 +14,8 @@ import { ExpansionPanelModule } from './ngt-components/expansion-panel/expansion
     BrowserModule,
     AppRoutingModule,
     C2cCardModule,
-    ExpansionPanelModule
+    ExpansionPanelModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
