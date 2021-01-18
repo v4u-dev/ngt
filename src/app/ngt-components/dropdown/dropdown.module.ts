@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DropdownComponent } from './dropdown.component';
+import "@angular/compiler";
 
 
 
 @NgModule({
-  declarations: [DropdownComponent],
+  declarations: [
+    DropdownComponent
+  ],
   imports: [
     CommonModule
   ],
@@ -14,3 +17,4 @@ import { DropdownComponent } from './dropdown.component';
   ]
 })
 export class DropdownModule { }
+
