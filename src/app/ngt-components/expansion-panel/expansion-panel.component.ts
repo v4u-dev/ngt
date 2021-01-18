@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, Directive, Input, OnInit, ViewEncap
 
 import { animate, state, style, transition, trigger } from '@angular/animations';
 @Component({
-  selector: 'c2c-expansion-panel',
+  selector: 'ngt-expansion-panel',
   templateUrl: './expansion-panel.component.html',
   styleUrls: ['./expansion-panel.component.scss'],
   animations : [
