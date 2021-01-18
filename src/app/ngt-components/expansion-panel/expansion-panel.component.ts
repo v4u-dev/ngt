@@ -9,12 +9,12 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
     trigger('animationShowHide', [
       state('close', style({ height: '0px', overflow: 'hidden' })),
       state('open', style({ height: '*',overflow: 'hidden'})),
-      transition('open <=> close', animate('900ms ease-in-out')),
+      transition('open <=> close', animate('500ms ease-in-out')),
     ]),
     trigger('animationRotate', [
       state('close', style({ transform: 'rotate(0)' })),
       state('open', style({ transform: 'rotate(-180deg)' })),
-      transition('open <=> close', animate('900ms ease-in-out')),
+      transition('open <=> close', animate('500ms ease-in-out')),
     ]),
   ],
 })
