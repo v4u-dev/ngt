@@ -21,5 +21,10 @@ export class TableComponent implements OnInit {
     selector: 'td',
   })
   export class td {}
+
+  // @Directive({
+  //   selector: 'tr',
+  // })
+  // export class tr {}
   
 

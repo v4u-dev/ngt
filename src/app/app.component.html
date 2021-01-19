@@ -8,6 +8,17 @@
   </c2c-card>
 
   <ngt-table>
-    <th *ngFor="let head of tableHeadings">{{head}}</th>
-    <td *ngFor="let data of tablecontent">{{data}}</td>
+    <table class="border-collapse table-auto text-center rounded-br-md mt-5 min-w-min">
+      <tr>
+        <th *ngFor="let h of headings" class="bg-green">
+          {{h}}
+        </th>
+      </tr>
+
+      <tr *ngFor="let row of tabdat" class="bg-blue">
+        <td *ngFor="let col of headings">
+          {{row[col]}}
+        </td>
+      </tr>
+    </table>  
   </ngt-table>

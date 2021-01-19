@@ -7,6 +7,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngt';
-  public tableHeadings=['head1','head2','head3'];
-  public tablecontent=['con1','co2','con3'];
+  public headings = ['No','Name','Cocos','Rank']
+  public tabdat = [
+    {
+      'No':'1',
+      'Name':'A',
+      'Cocos':'100',
+      'Rank':'1'
+    },
+    {
+      'No':'2',
+      'Name':'B',
+      'Cocos':'50',
+      'Rank':'2'
+    },
+    {
+      'No':'3',
+      'Name':'C',
+      'Cocos':'0',
+      'Rank':'3'
+    }
+  ]
 }
