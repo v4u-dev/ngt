@@ -1,81 +1,42 @@
 import { Component, OnInit } from '@angular/core';
-
+import { SlideInOutAnimation } from '../../animate';
 @Component({
   selector: 'ngt-dropdown',
   templateUrl: './dropdown.component.html',
-  styleUrls: ['./dropdown.component.scss']
+  styleUrls: ['./dropdown.component.scss'],
+  animations: [SlideInOutAnimation]
 })
 export class DropdownComponent implements OnInit {
 
   constructor() { }
-  public dropornot=false;
-  public newdropornot=false;
-  public mahismathidropornot=false;
-  public languagesdropornot=false;
-  public postsdropornot=false;
-  public profiledropornot=false;
   public dropDownarr=['Profile','Name','Address']
   public dropDownarratProfile=['My Profile','Settings','Buddies','Clans','Logout']
 public dropDownarratPost=['New Posts','Top Posts','Hot Posts']
-  dropdownclick(){
-    if(this.dropornot==true)
-    {
-        this.dropornot=false;
-    }
-    else if(this.dropornot==false)
-    {
-          this.dropornot=true;
-    }
+animationState = 'out';
+animationfornewdropdown = 'out'
+animationformahishmathidropdown = 'out'
+animationforlanguagedropdown = 'out'
+animationforpostdropdown = 'out'
+animationforprofiledropdown='out'
+toggleShowDiv(divName: string) {
+  if (divName == 'Python Programming') {
+    this.animationState = this.animationState === 'out' ? 'in' : 'out';
   }
-  New(){
-    if(this.newdropornot==true)
-    {
-        this.newdropornot=false;
-    }
-    else if(this.newdropornot==false)
-    {
-          this.newdropornot=true;
-    }
+  if (divName == 'New') {
+    this.animationfornewdropdown = this.animationfornewdropdown === 'out' ? 'in' : 'out';
   }
-  Mahismathi(){
-    if(this.mahismathidropornot==true)
-    {
-        this.mahismathidropornot=false;
-    }
-    else if(this.mahismathidropornot==false)
-    {
-          this.mahismathidropornot=true;
-    }
-  }
-  Languages(){
-    if(this.languagesdropornot==true)
-    {
-        this.languagesdropornot=false;
-    }
-    else if(this.languagesdropornot==false)
-    {
-          this.languagesdropornot=true;
-    }
-  }
-  Posts(){
-    if(this.postsdropornot==true)
-    {
-        this.postsdropornot=false;
-    }
-    else if(this.postsdropornot==false)
-    {
-          this.postsdropornot=true;
-    }
-  }
-  Profile(){
-    if(this.profiledropornot==true)
-    {
-        this.profiledropornot=false;
-    }
-    else if(this.profiledropornot==false)
-    {
-          this.profiledropornot=true;
-    }
+  if (divName == 'Mahishmati') {
+    this.animationformahishmathidropdown = this.animationformahishmathidropdown === 'out' ? 'in' : 'out';
+  } 
+  if (divName == 'Language') {
+    this.animationforlanguagedropdown = this.animationforlanguagedropdown === 'out' ? 'in' : 'out';
+  } 
+  if (divName == 'Post') {
+    this.animationforpostdropdown = this.animationforpostdropdown=== 'out' ? 'in' : 'out';
+  } 
+  if (divName == 'Profile') {
+    this.animationforprofiledropdown = this.animationforprofiledropdown=== 'out' ? 'in' : 'out';
+  } 
   }
   ngOnInit(): void {
   }
