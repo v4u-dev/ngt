@@ -1,11 +1,11 @@
 
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<ul  class="flex mt-10 ml-10">
-    <li style="margin-right:1.5rem" class="font-semi-bold text-lg cursor-pointer tracking-wide font-sans tab-item" *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active-tab]="tab.active">
+<!-- <div class="bg-blue-600 w-50 h-50"> -->
+  <ul  class="flex mt-10 ml-10">
+    <li style="margin-right:1.5rem" class="font-semibold text-lg cursor-pointer tracking-wide tab-item " *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active-tab]="tab.active">
         {{tab.tabTitle}}
     </li>
 </ul>
-<hr class=" text-gray-50 text-sm">
+<!-- <hr class=" text-gray-50 text-sm "> -->
 <ng-content ></ng-content>
+
+<!-- </div> -->
