@@ -20,6 +20,8 @@
         "@angular/platform-browser-dynamic": "~10.2.0",
         "@angular/router": "~10.2.0",
         "@fullhuman/postcss-purgecss": "^3.0.0",
+        "ngx-owl-carousel-o": "^5.0.0",
+        "owl-ng": "^1.0.0-beta.19",
         "postcss": "^8.1.14",
         "rxjs": "~6.6.0",
         "tailwindcss": "^2.0.1",
