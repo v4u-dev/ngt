@@ -12,7 +12,7 @@
       </svg>
     </button>
   </div>
-  <div [@slideInOut]="animationState" >
+  <div [@slideInOut]="animationState">
     <div class=" origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white  focus:outline-none">
       <div *ngFor="let values of dropDownarr" class="py-1" role="menu" aria-orientation="vertical"
         aria-labelledby="options-menu">
@@ -116,9 +116,10 @@
         </svg> -->
     </button>
   </div>
-  <div [@slideInOut]="animationforpostdropdown"
-    class="focus:outline-none origin-top-right absolute right-0  w-32 -mt-5 mr-4 rounded-md shadow-lg bg-white">
-    <img class="origin-top-right absolute right-0  -mt-2 mr-2" src="../../../assets/Component 983 – 1.svg">
+ 
+  <div [@slideInOut]="animationforpostdropdown">
+    <img class="origin-top-right absolute right-0  -mt-7 mr-6 " src="../../../assets/Component 983 – 1.svg">
+    <div class="focus:outline-none origin-top-right absolute right-0 z-40 w-32 -mt-5 mr-4 rounded-md shadow-lg bg-white">
     <div *ngFor="let values of dropDownarratPost" class="py-1" role="menu" aria-orientation="vertical"
       aria-labelledby="options-menu">
       <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
@@ -126,7 +127,7 @@
     </div>
   </div>
 </div>
-
+</div>
 <br>
 <br>
 <br>
