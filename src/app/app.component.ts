@@ -12,5 +12,10 @@ export class AppComponent {
   }
   checkboxCLicked(){
     console.log("checkbox clicked");
+  console.log(this.hello);
+
   }
+
+  hello: any;
+  
 }
