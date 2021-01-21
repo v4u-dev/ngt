@@ -2,7 +2,7 @@ import { Component, OnInit ,Input} from '@angular/core';
 import {TabComponent} from '../tab/tab.component';
 
 @Component({
-  selector: 'tabs',
+  selector: 'ngt-tabs',
   templateUrl: './tabs.component.html',
   styleUrls: ['./tabs.component.scss'],
 
