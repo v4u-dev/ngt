@@ -1,3 +1,4 @@
+import { Directive } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { SlideInOutAnimation } from '../../animate';
 @Component({
@@ -42,3 +43,34 @@ toggleShowDiv(divName: string) {
   }
 
 }
+
+
+@Directive({
+  selector: 'ngt-dropdown-programmig',
+})
+export class ngtdropdownprogrammig {}
+
+@Directive({
+  selector: 'ngt-dropdown-New',
+})
+export class ngtdropdownNew {}
+
+@Directive({
+  selector: 'ngt-dropdown-clans',
+})
+export class ngtdropdownclans {}
+
+@Directive({
+  selector: 'ngt-dropdown-languages',
+})
+export class ngtdropdownlanguages {}
+
+@Directive({
+  selector: 'ngt-dropdown-posts',
+})
+export class ngtdropdownposts {}
+
+@Directive({
+  selector: 'ngt-dropdown-profile',
+})
+export class ngtdropdownprofile {}

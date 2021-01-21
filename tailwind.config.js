@@ -56,7 +56,7 @@ module.exports = {
                     'poppins'
                 ]
             },
-            //Border radius
+            //Border radius         
             borderRadius: {
                 'none': '0',
                 'sm': '5px',

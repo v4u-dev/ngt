@@ -7,12 +7,9 @@ import { ChangeDetectionStrategy, Component, Directive, Input, OnInit, ViewEncap
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-
-
   constructor() { }
   ngOnInit(): void {
   }
-
 }
 
 
