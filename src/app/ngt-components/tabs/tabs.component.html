@@ -1,6 +1,6 @@
 
 <!-- <div class="bg-blue-600 w-50 h-50"> -->
-  <ul  class="flex mt-10 ml-10">
+  <ul  class="flex mt-10 ml-10" [style.background-color]="bgColor" [style.color]="color">
     <li style="margin-right:1.5rem" class="font-semibold text-lg cursor-pointer tracking-wide tab-item " *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active-tab]="tab.active">
         {{tab.tabTitle}}
     </li>
