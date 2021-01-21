@@ -16,10 +16,10 @@ export class CardComponent implements OnInit {
 @Directive({
   selector: 'c2c-card-title',
 })
-export class C2cCardTitle {}
+export class C2cCardTitle { }
 
 @Directive({
   selector: 'c2c-card-content',
 })
-export class C2cCardContent {}
+export class C2cCardContent { }
 
