@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ngt-button',
@@ -6,9 +6,13 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent implements OnInit {
-  // @Input() buttonBehaviour:{'color':string,'background':string,'height':any,'width':any}
-@Input() color:string;
-  constructor() { }
+
+  // @Input() color: String;
+  @Input() color: { 'colorname': string, 'height':number };
+
+  constructor() {
+    console.log(this.color);
+   }
 
   ngOnInit(): void {
   }

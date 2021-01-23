@@ -12,12 +12,6 @@ export class AppComponent {
   buttonClicked(){
     console.log("button is clicked")
   }
-  // checkboxCLicked(){
-  //   console.log("checkbox clicked");
-  // console.log(this.hello);
-
-  // }
-
-  hello: any;
+  
   
 }
