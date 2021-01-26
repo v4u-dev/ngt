@@ -6,11 +6,19 @@
     <c2c-card-content>This is my card desc</c2c-card-content>
   
   </c2c-card> -->
-
-  <ngt-button (click)="buttonClicked()">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <ngt-button (click)="buttonClicked()" [color]="{'colorname':'blue','height':20}" >
     click on me
   </ngt-button>
-  <ngt-checkbox (click)="checkboxCLicked()">
-    check on me
+
+
+
+
+  <!-- <ngt-checkbox name="fieldName" (click)="checkboxCLicked()">
+   
+    checkbox  
   </ngt-checkbox>
-  <ngt-input></ngt-input>
+  <ngt-input></ngt-input> -->

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ngt-button',
@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
-  constructor() { }
+  // @Input() color: String;
+  @Input() color: { 'colorname': string, 'height':number };
+
+  constructor() {
+    console.log(this.color);
+   }
 
   ngOnInit(): void {
   }
