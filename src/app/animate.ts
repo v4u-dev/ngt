@@ -15,10 +15,10 @@ export const SlideInOutAnimation = [
             animate('400ms ease-in-out', style({
                 'opacity': '0'
             })),
-            animate('600ms ease-in-out', style({
+            animate('500ms ease-in-out', style({
                 'max-height': '0px'
             })),
-            animate('700ms ease-in-out', style({
+            animate('600ms ease-in-out', style({
                 'visibility': 'hidden'
             }))
         ]
@@ -27,10 +27,10 @@ export const SlideInOutAnimation = [
             animate('1ms ease-in-out', style({
                 'visibility': 'visible'
             })),
-            animate('600ms ease-in-out', style({
+            animate('500ms ease-in-out', style({
                 'max-height': '500px'
             })),
-            animate('800ms ease-in-out', style({
+            animate('700ms ease-in-out', style({
                 'opacity': '1'
             }))
         ]

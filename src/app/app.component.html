@@ -12,18 +12,13 @@
   <!-- code for programming dropdown in selector ngt-dropdown-programmig -->
   <ngt-dropdown-programmig>
     <div class="relative pl-32 py-16 inline-block text-left ">
-      <div (click)="toggleShowDiv('Python Programming')">
+      <div (click)="toggleShowDiv('Python Programming')" (click)="onSwitch('programs')">
         <button
           class="inline-flex justify-center w-full bg-blue bg-opacity-100 rounded-lg shadow-sm px-4 py-2  text-sm font-medium font-sans  focus:outline-none "
           id="options-menu" aria-haspopup="true" aria-expanded="true">
           <input type="text" [disabled]="true" name="fieldName" class=" text-white bg-blue cursor-pointer font-sans"
             ngDefaultControl [(ngModel)]="singleelementofdropdownarrprogram">
-          <svg class="-mr-1 ml-10 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#fff"
-            aria-hidden="true">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd" />
-          </svg>
+            <img [@animationRotate]="programStatus"  class="h-5 w-5" src="../../../assets/arrownewwhite.svg">
         </button>
       </div>
       <div [@slideInOut]="animationState">
@@ -44,18 +39,13 @@
   <!-- code for New dropdown in selector ngt-dropdown-New -->
   <ngt-dropdown-New>
     <div class="relative pl-64 py-16 inline-block text-left">
-      <div (click)="toggleShowDiv('New')" class="w-28 ">
+      <div (click)="toggleShowDiv('New')" (click)="onSwitch('new')" class="w-28 ">
         <button
           class="flex flex-row justify-center w-full bg-gray-100 bg-opacity-100 rounded-lg shadow-sm px-4 py-2  bg-white text-sm font-medium font-sans  text-gray-700 focus:outline-none "
           id="options-menu" aria-haspopup="true" aria-expanded="true">
           <input type="text" [disabled]="true" name="fieldName" class="w-full text-black-200 font-sans  cursor-pointer"
             ngDefaultControl [(ngModel)]="singleelementofdropDownforNew">
-          <svg class="-mr-1  h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-            aria-hidden="true">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd" />
-          </svg>
+            <img [@animationRotate]="newStatus"  class=" h-5 w-5" src="../../../assets/arrownew.svg">
         </button>
       </div>
       <div [@slideInOut]="animationfornewdropdown"
@@ -74,19 +64,14 @@
   <!-- code for Clans dropdown in selector ngt-dropdown-clans -->
   <ngt-dropdown-clans>
     <div class="relative pl-64 py-16 inline-block text-left ">
-      <div (click)="toggleShowDiv('Mahishmati')" class="w-44">
+      <div (click)="toggleShowDiv('Mahishmati')" (click)="onSwitch('Clans')" class="w-44">
         <button
           class="inline-flex justify-center w-full bg-green bg-opacity-100 rounded-lg shadow-sm px-4 py-2 text-sm font-medium font-sans  text-white focus:outline-none "
           id="options-menu" aria-haspopup="true" aria-expanded="true">
           <input type="text" [disabled]="true" name="fieldName"
             class="w-full text-white bg-green font-sans  cursor-pointer" ngDefaultControl
             [(ngModel)]="singleelementofdropDownforClans">
-          <svg class="-mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-            aria-hidden="true">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd" />
-          </svg>
+            <img [@animationRotate]="clansStatus"  class=" h-5 w-5" src="../../../assets/arrownewwhite.svg">
         </button>
       </div>
       <!-- ring-1 ring-black ring-opacity-5  -->
@@ -106,18 +91,13 @@
   <!-- code for Languages dropdown in selector ngt-dropdown-languages -->
   <ngt-dropdown-languages>
     <div class="relative pl-32 py-16 inline-block text-left ">
-      <div (click)="toggleShowDiv('Language')" class="w-60">
+      <div (click)="toggleShowDiv('Language')" (click)="onSwitch('languages')" class="w-60">
         <button
           class="flex flex-row justify-center w-full bg-gray-100 bg-opacity-100 rounded-full shadow-sm px-4 py-2 bg-white font-sans  text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none "
           id="options-menu" aria-haspopup="true" aria-expanded="true">
           <input type="text" [disabled]="true" name="fieldName" class="w-full text-black-200 font-sans  cursor-pointer"
             ngDefaultControl [(ngModel)]="singleelementofdropDownforLanguages">
-          <svg class="-mr-1 h-5 w-5 justify-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-            fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd" />
-          </svg>
+            <img [@animationRotate]="languagesStatus"  (click)="toggleShowDiv('languages')"  class=" h-5 w-5 " src="../../../assets/arrownew.svg">
         </button>
       </div>
       <div [@slideInOut]="animationforlanguagedropdown"
@@ -147,7 +127,7 @@
             <span class="px-4 font-sans ">Python Programming</span>
             <span class="text-xs font-medium text-gray inline-flex px-4 font-sans ">1000+ Posts</span>
           </div>
-          <img (click)="toggleShowDiv('Post')" class="ml-auto mt-3 h-5 w-5 mr-4 " src="../../../assets/menu.svg">
+          <img [@animationRotate]="postStatus" (click)="onSwitch('post')" (click)="toggleShowDiv('Post')"  class="ml-auto mt-3 h-5 w-5 mr-4 " src="../../../assets/menu.svg">
           <!-- <svg class="-mr-1 ml-10 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg> -->
@@ -172,7 +152,7 @@
 
   <ngt-dropdown-profile>
     <div class="relative pl-64 py-16 inline-block text-left ">
-      <div (click)="toggleShowDiv('Profile')">
+      <div (click)="toggleShowDiv('Profile')" (click)="onSwitch('profile')">
         <button type="button"
           class="flex flex-row px-4 py-2 bg-white text-sm font-medium font-sans text-white focus:outline-none "
           id="options-menu" aria-haspopup="true" aria-expanded="true">
@@ -180,11 +160,11 @@
           <span class="px-4 text-md mt-3 font-medium text-black-200 mr-4 font-sans">
             Vamsi Krishna
           </span>
-          <img class="mt-5" src="assets/chevron-right-solid.svg">
+          <img [@animationRotate]="profileStatus" class="mt-5" src="assets/chevron-right-solid.svg">
         </button>
       </div>
       <div [@slideInOut]="animationforprofiledropdown">
-        <img style="bottom: 7rem;" class=" absolute right-0  -mt-4 mr-2" src="assets/Polygon 1.svg">
+        <img   style="bottom: 7rem;" class=" absolute right-0  -mt-4 mr-2" src="assets/Polygon 1.svg">
         <div style="width: 150px;bottom: 7.5rem;"
           class="absolute right-0 bg-blue -mt-2 rounded-md shadow-lg bg-opacity-100 ">
           <div *ngFor="let values of dropDownarratProfile" class="py-1 " role="menu" aria-orientation="vertical"
