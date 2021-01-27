@@ -2,104 +2,104 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@layer components {
-  body {
-    @apply bg-white m-0 font-sans w-screen;
-  }
+// @layer components {
+//   body {
+//     @apply bg-white m-0 font-sans w-screen;
+//   }
 
-  .active {
-    @apply opacity-100;
-  }
+//   .active {
+//     @apply opacity-100;
+//   }
 
-  .inactive {
-    @apply opacity-80;
-  }
+//   .inactive {
+//     @apply opacity-80;
+//   }
 
-  .primaryDark {
-    @apply text-black-200;
-  }
+//   .primaryDark {
+//     @apply text-black-200;
+//   }
 
-  .primaryColor {
-    @apply text-blue;
-  }
+//   .primaryColor {
+//     @apply text-blue;
+//   }
 
-  .secondaryColor {
-    @apply text-green;
-  }
+//   .secondaryColor {
+//     @apply text-green;
+//   }
 
-  .primaryLight {
-    @apply text-white;
-  }
+//   .primaryLight {
+//     @apply text-white;
+//   }
 
-  .secondaryLight {
-    @apply text-gray-200;
-  }
+//   .secondaryLight {
+//     @apply text-gray-200;
+//   }
 
-  .primaryColorBg {
-    @apply bg-blue;
-  }
+//   .primaryColorBg {
+//     @apply bg-blue;
+//   }
 
-  .secondaryColorBg {
-    @apply bg-green;
-  }
+//   .secondaryColorBg {
+//     @apply bg-green;
+//   }
 
-  .primaryLightBg {
-    @apply bg-white;
-  }
+//   .primaryLightBg {
+//     @apply bg-white;
+//   }
 
-  .secondaryLightBg {
-    @apply bg-gray-100;
-  }
+//   .secondaryLightBg {
+//     @apply bg-gray-100;
+//   }
 
-  .borderRadius {
-    @apply rounded;
-  }
+//   .borderRadius {
+//     @apply rounded;
+//   }
 
-  .border1 {
-    @apply border-2 border-solid border-gray-100;
-  }
+//   .border1 {
+//     @apply border-2 border-solid border-gray-100;
+//   }
 
-  .border2 {
-    @apply border-4 border-solid border-gray-100;
-  }
+//   .border2 {
+//     @apply border-4 border-solid border-gray-100;
+//   }
 
-  .primaryBtn-sm {
-    @apply inline-block px-4 py-2 text-xs font-medium text-center text-white  transition bg-blue rounded font-sans;
-  }
+//   .primaryBtn-sm {
+//     @apply inline-block px-4 py-2 text-xs font-medium text-center text-white  transition bg-blue rounded font-sans;
+//   }
 
-  .primaryBtn-md {
-    @apply inline-block px-5 py-2 text-sm font-medium leading-6 text-center text-white  transition bg-blue rounded font-sans;
-  }
+//   .primaryBtn-md {
+//     @apply inline-block px-5 py-2 text-sm font-medium leading-6 text-center text-white  transition bg-blue rounded font-sans;
+//   }
 
-  .primaryBtn-lg {
-    @apply inline-block px-6 py-2 text-base font-medium leading-7 text-center text-white  transition bg-blue rounded font-sans;
-  }
+//   .primaryBtn-lg {
+//     @apply inline-block px-6 py-2 text-base font-medium leading-7 text-center text-white  transition bg-blue rounded font-sans;
+//   }
 
-  .secondaryBtn-sm {
-    @apply inline-block px-4 py-2 text-xs font-medium text-center text-black-100  transition bg-gray-100 rounded font-sans;
-  }
+//   .secondaryBtn-sm {
+//     @apply inline-block px-4 py-2 text-xs font-medium text-center text-black-100  transition bg-gray-100 rounded font-sans;
+//   }
 
-  .secondaryBtn-md {
-    @apply inline-block px-5 py-2 text-sm font-medium leading-6 text-center text-black-100  transition bg-gray-100 rounded font-sans;
-  }
+//   .secondaryBtn-md {
+//     @apply inline-block px-5 py-2 text-sm font-medium leading-6 text-center text-black-100  transition bg-gray-100 rounded font-sans;
+//   }
 
-  .secondaryBtn-lg {
-    @apply inline-block px-6 py-2 text-base font-medium leading-7 text-center text-black-100  transition bg-gray-100 rounded font-sans;
-  }
+//   .secondaryBtn-lg {
+//     @apply inline-block px-6 py-2 text-base font-medium leading-7 text-center text-black-100  transition bg-gray-100 rounded font-sans;
+//   }
 
-  .headings {
-    @apply text-lg font-semibold;
-  }
+//   .headings {
+//     @apply text-lg font-semibold;
+//   }
 
-  .sub-heading-1 {
-    @apply text-base font-medium;
-  }
+//   .sub-heading-1 {
+//     @apply text-base font-medium;
+//   }
 
-  .sub-heading-2 {
-    @apply text-sm font-medium;
-  }
+//   .sub-heading-2 {
+//     @apply text-sm font-medium;
+//   }
 
-  .text {
-    @apply text-xs font-normal;
-  }
-}
+//   .text {
+//     @apply text-xs font-normal;
+//   }
+// }

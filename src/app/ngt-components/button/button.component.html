@@ -1,4 +1,31 @@
-<button [style.background-color] = "color" class="btn block uppercase mx-auto shadowfocus:shadow-outline focus:outline-none 
-text-xs py-3 px-10 rounded   btn ripple" >  
-    <ng-content></ng-content>
-</button>
+<div class="p-10">
+    <div class="grid grid-cols-3 gap-4">
+        <div class="p-10">
+            <ng-content select="Yourfeed-btn"></ng-content>
+        </div>
+        <div class="p-10">
+            <ng-content select="confirm-btn"></ng-content>
+        </div>
+        <div class="p-10">
+            <ng-content select="post-btn"></ng-content>
+        </div>
+        <div class="p-10">
+            <ng-content select="contact-btn"></ng-content>
+        </div>
+        <div class="p-10">
+            <ng-content select="next-btn"></ng-content>
+        </div>
+        <div class="p-10">
+            <ng-content select="delete-btn"></ng-content>
+        </div>
+        <div class="p-10">
+            <ng-content select="selectquestions-btn"></ng-content>
+        </div>
+        <div class="p-10">
+            <ng-content select="Newclans-btn"></ng-content>
+        </div>
+        <div class="p-10">
+            <ng-content select="CreateChallenge-btn"></ng-content>
+        </div>
+    </div>
+</div>

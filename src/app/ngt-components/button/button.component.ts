@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Directive } from '@angular/core';
 
 @Component({
   selector: 'ngt-button',
@@ -7,13 +7,75 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
-  @Input() color: String;
 
   constructor() {
-    console.log(this.color);
-   }
+
+  }
 
   ngOnInit(): void {
   }
+
+}
+
+@Directive({
+  selector: 'Yourfeed-btn',
+})
+export class Yourfeedbtn {
+
+}
+
+@Directive({
+  selector: 'confirm-btn',
+})
+export class confirmbtn {
+
+}
+
+@Directive({
+  selector: 'post-btn',
+})
+export class postbtn {
+
+}
+
+@Directive({
+  selector: 'contact-btn',
+})
+export class contactbtn {
+
+}
+
+@Directive({
+  selector: 'next-btn',
+})
+export class nextbtn {
+
+}
+
+@Directive({
+  selector: 'delete-btn',
+})
+export class deletebtn {
+
+}
+
+@Directive({
+  selector: 'selectquestions-btn',
+})
+export class selectquestionsbtn {
+
+}
+
+@Directive({
+  selector: 'Newclans-btn',
+})
+export class Newclansbtn {
+
+}
+
+@Directive({
+  selector: 'CreateChallenge-btn',
+})
+export class CreateChallengebtn {
 
 }
