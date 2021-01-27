@@ -11,7 +11,7 @@
 <ngt-dropdown>
   <!-- code for programming dropdown in selector ngt-dropdown-programmig -->
   <ngt-dropdown-programmig>
-    <div class="relative pl-64 py-16 inline-block text-left ">
+    <div class="relative pl-32 py-16 inline-block text-left ">
       <div (click)="toggleShowDiv('Python Programming')">
         <button
           class="inline-flex justify-center w-full bg-blue bg-opacity-100 rounded-lg shadow-sm px-4 py-2  text-sm font-medium font-sans  focus:outline-none "
@@ -105,7 +105,7 @@
 
   <!-- code for Languages dropdown in selector ngt-dropdown-languages -->
   <ngt-dropdown-languages>
-    <div class="relative pl-64 py-16 inline-block text-left ">
+    <div class="relative pl-32 py-16 inline-block text-left ">
       <div (click)="toggleShowDiv('Language')" class="w-60">
         <button
           class="flex flex-row justify-center w-full bg-gray-100 bg-opacity-100 rounded-full shadow-sm px-4 py-2 bg-white font-sans  text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none "
@@ -183,10 +183,10 @@
           <img class="mt-5" src="assets/chevron-right-solid.svg">
         </button>
       </div>
-      <div [@slideInOut]="animationforprofiledropdown" class="">
-        <img style="bottom: 7rem;" class="focus:outline-none absolute right-0  -mt-4 mr-2" src="assets/Polygon 1.svg">
+      <div [@slideInOut]="animationforprofiledropdown">
+        <img style="bottom: 7rem;" class=" absolute right-0  -mt-4 mr-2" src="assets/Polygon 1.svg">
         <div style="width: 150px;bottom: 7.5rem;"
-          class="absolute right-0 bg-blue -mt-2 rounded-md shadow-lg bg-blue bg-opacity-100 ">
+          class="absolute right-0 bg-blue -mt-2 rounded-md shadow-lg bg-opacity-100 ">
           <div *ngFor="let values of dropDownarratProfile" class="py-1 " role="menu" aria-orientation="vertical"
             aria-labelledby="options-menu">
             <div class="flex flex-row">
