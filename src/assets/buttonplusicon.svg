@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53">
+  <g id="buttonplusicon" transform="translate(-1134 -149)">
+    <g id="Group_763" data-name="Group 763" transform="translate(-527 122)">
+      <circle id="Ellipse_7" data-name="Ellipse 7" cx="26.5" cy="26.5" r="26.5" transform="translate(1661 27)" fill="#fff"/>
+    </g>
+    <g id="add" transform="translate(1148.07 163)">
+      <g id="Group_762" data-name="Group 762">
+        <path id="Path_556" data-name="Path 556" d="M12.514,0A12.514,12.514,0,0,0,0,12.417,12.6,12.6,0,0,0,12.514,24.931,12.465,12.465,0,0,0,12.514,0Zm6.573,13.877H13.975v5.21a1.461,1.461,0,1,1-2.922,0v-5.21H5.843a1.461,1.461,0,1,1,0-2.922h5.21V5.843a1.461,1.461,0,1,1,2.922,0v5.113h5.113a1.461,1.461,0,1,1,0,2.922Z" fill="#2dce89"/>
+      </g>
+    </g>
+  </g>
+</svg>

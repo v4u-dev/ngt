@@ -6,19 +6,93 @@
     <c2c-card-content>This is my card desc</c2c-card-content>
   
   </c2c-card> -->
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <ngt-button (click)="buttonClicked()" [color]="{'colorname':'blue','height':20}" >
-    click on me
-  </ngt-button>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
+<!-- button starts here -->
+<ngt-button>
+
+  <Yourfeed-btn>
+    <button [style.background-color]="YourfeedBtnColor" [style.height]="YourfeedBtnHeight"
+      [style.width]="YourfeedBtnWidth" class="btn block mx-auto shadowfocus:shadow-outline focus:outline-none 
+      text-md  text-white  rounded-md shadow-sm	  font-semibold  btn ripple">
+      Your Feed
+    </button>
+  </Yourfeed-btn>
+
+  <confirm-btn>
+    <button [style.background-color]="confirmBtnColor" [style.height]="confirmBtnHeight" [style.width]="confirmBtnWidth"
+      class="btn block mx-auto shadowfocus:shadow-outline focus:outline-none 
+      text-md  text-white  rounded-md shadow-sm	  font-normal  btn ripple">
+      Confirm
+    </button>
+  </confirm-btn>
+
+  <post-btn>
+    <button [style.background-color]="postBtnColor" [style.height]="postBtnHeight" [style.width]="postBtnWidth" class="btn block mx-auto shadowfocus:shadow-outline focus:outline-none 
+      text-md  text-white  rounded-md shadow-sm	  font-normal  btn ripple">
+      Post
+    </button>
+  </post-btn>
+
+  <contact-btn>
+    <button [style.background-color]="contactBtnColor" [style.height]="contactBtnHeight" [style.width]="contactBtnWidth"
+      class="btn block mx-auto shadowfocus:shadow-outline focus:outline-none 
+      text-md  text-white  rounded-md shadow-sm	  font-normal  btn ripple">
+      Contact
+    </button>
+  </contact-btn>
+
+  <next-btn>
+    <button [style.background-color]="nextBtnColor" [style.height]="nextBtnHeight" [style.width]="nextBtnWidth" class="btn block mx-auto shadowfocus:shadow-outline focus:outline-none 
+      text-md  text-white  rounded-md shadow-sm	  font-semibold  btn ripple">
+      Next
+    </button>
+  </next-btn>
+
+  <delete-btn>
+    <button [style.color]="deleteBtntextcolor" [style.background-color]="deleteBtnColor"
+      [style.height]="deleteBtnHeight" [style.width]="deleteBtnWidth" class="btn block mx-auto shadowfocus:shadow-outline focus:outline-none 
+      text-md  rounded-md shadow-sm	  font-normal  btn ripple">
+      Delete
+    </button>
+  </delete-btn>
+
+  <selectquestions-btn>
+    <button [style.background-color]="selectquestionsBtnColor" [style.height]="selectquestionsBtnHeight"
+      [style.width]="selectquestionsBtnWidth" class="btn block mx-auto shadowfocus:shadow-outline focus:outline-none 
+      text-sm  text-black  rounded-md shadow-sm	  font-normal  btn ripple">
+      Select Questions
+    </button>
+  </selectquestions-btn>
+
+  <Newclans-btn>
+    <button [style.color]="NewclansBtntextcolor" [style.background-color]="NewclansBtnColor"
+      [style.height]="NewclansBtnHeight" [style.width]="NewclansBtnWidth" class="btn block mx-auto shadowfocus:shadow-outline focus:outline-none 
+      text-md  text-white  rounded-md shadow-sm	  font-medium  btn ripple">
+      New clans
+    </button>
+  </Newclans-btn>
+
+  <CreateChallenge-btn>
+    <button [style.background-color]="CreateChallengeBtnColor" [style.height]="CreateChallengeBtnHeight"
+      [style.width]="CreateChallengeBtnWidth" class="btn block mx-auto shadowfocus:shadow-outline focus:outline-none 
+      text-md  text-white  rounded-md shadow-sm	  font-medium  btn ripple">
+      <img class="focus:outline-none absolute  -mt-4 ml-4" src="../assets/buttonplusicon.svg">
+      Create Challenge
+    </button>
+  </CreateChallenge-btn>
+
+</ngt-button>
+<!-- button ends here -->
 
 
-  <!-- <ngt-checkbox name="fieldName" (click)="checkboxCLicked()">
-   
-    checkbox  
-  </ngt-checkbox>
-  <ngt-input></ngt-input> -->
+<!-- <ngt-button [color]= "'blue'" >
+    Your feed
+  </ngt-button> -->
+<!-- <ngt-checkbox name="fieldName" (click)="checkboxCLicked()">
+  check on me
+  Pradeep
+</ngt-checkbox> -->
+<!-- <ngt-input></ngt-input> -->
