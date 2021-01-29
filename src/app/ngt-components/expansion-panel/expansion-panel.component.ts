@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Directive, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Directive, Input,Output,EventEmitter, OnInit, ViewEncapsulation } from '@angular/core';
 
 import { animate, state, style, transition, trigger } from '@angular/animations';
 @Component({
@@ -27,6 +27,24 @@ export class ExpansionPanelComponent implements OnInit {
   }
 
   constructor() { }
+
+  @Input() backgroundColor : string
+  @Input() border : string
+  
+  // visible: boolean = true;
+  @Output() open: EventEmitter<any> = new EventEmitter();
+  @Output() close: EventEmitter<any> = new EventEmitter();
+
+  toggle() {
+    if (this.sStatus=='open') {
+      this.open.emit("opening");
+      
+    } else {
+      this.close.emit("closing");
+      
+    }
+  }
+
 
   ngOnInit(): void {
   }

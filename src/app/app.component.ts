@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngt';
-  
+  onClick(event){
+    console.log(event);
+  }
+
+  onOpen(e1){
+    console.log(e1)
+  }
+  onClose(e2){
+    console.log(e2)
+  }
 }
 

@@ -1,13 +1,13 @@
 <!-- refer the comments below -->
-<div class="w-3/4 mx-auto shadow rounded-md flex flex-col items-left bg-white px-5 py-3 border-gray-100 border-2">
-    <div class=" flex flex-row justify-between " style="cursor: pointer;" (click)="onSwitch()">
+<div [style.background-color]="backgroundColor" [style.border]="border"  class="w-3/4 mx-auto shadow rounded-md flex flex-col items-left px-5 py-3   border-gray-100 border-2" >
+    <div class=" flex flex-row justify-between " style="cursor: pointer;" (click)="onSwitch()" (click)="toggle()">
         <ng-content select="expansion-panel-title"></ng-content>
-        <img [@animationRotate]="sStatus" src="../../../assets/downarrow.svg"  >
+        <img [@animationRotate]="sStatus"  src="../../../assets/downarrow.svg"  >
         <!-- replace it with up arrow -->
         <!-- <img src="../../../assets/upward.svg" *ngIf="!isHidden"> -->
     </div>
 
- <div  [@animationShowHide]="sStatus">
+ <div  [@animationShowHide]="sStatus" >
     <div class="py-4 " >
         <ng-content ></ng-content>
         </div>
