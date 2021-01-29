@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ButtonComponent } from '../app/ngt-components/button/button.component';
+// import { ButtonComponent } from '../app/ngt-components/button/button.component';
 
 @Component({
   selector: 'app-root',
