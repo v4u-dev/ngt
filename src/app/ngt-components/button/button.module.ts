@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgtButton, confirmbtn, postbtn, contactbtn, nextbtn, deletebtn, selectquestionsbtn, Newclansbtn, CreateChallengebtn } from 'src/app/ngt-components/button/button.component'
+import { NgtButton } from 'src/app/ngt-components/button/button.component'
 
 
 
@@ -8,7 +8,7 @@ import { NgtButton, confirmbtn, postbtn, contactbtn, nextbtn, deletebtn, selectq
   imports: [
     CommonModule
   ],
-  declarations: [NgtButton, confirmbtn, postbtn, contactbtn, nextbtn, deletebtn, selectquestionsbtn, Newclansbtn, CreateChallengebtn],
-  exports: [NgtButton,  confirmbtn, postbtn, contactbtn, nextbtn, deletebtn, selectquestionsbtn, Newclansbtn, CreateChallengebtn]
+  declarations: [NgtButton ],
+  exports: [NgtButton ]
 })
 export class ButtonModule { }
