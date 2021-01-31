@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input} from '@angular/core';
 
 @Component({
   selector: 'ngt-input',
@@ -9,6 +9,20 @@ export class InputComponent implements OnInit {
 
   constructor() { }
 
+  @Input() bgColor: string;
+  @Input() fontcolor: string;
+  @Input() fontsize: string;
+  @Input() fontweight:string;
+  @Input() c2cplaceholder:string;
+  @Input() Inputtype:Boolean;
+  @Input() emojino:Number;
+  @Input() c2ctype:string;
+  @Input() c2cname:string;
+
+  // emojis
+  emoji=["😀","😁","😂","🤣","😃","😄","😅","😆","😉","😊","😋","😎"]
+
+  
   ngOnInit(): void {
   }
 

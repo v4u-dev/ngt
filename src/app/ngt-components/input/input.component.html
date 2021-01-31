@@ -1,14 +1,33 @@
 <!-- component -->
-<div class="flex">
-    <!-- <span class="text-sm border border-2 rounded-l px-4 py-2 bg-gray-300 whitespace-no-wrap">Label:</span> -->
-    <input name="field_name"  class="border border-2  px-4 py-2 w-full" type="text"  />
-</div>
 
+<!-- Normal input Field -->
+<input
+  *ngIf="!!Inputtype"
+  [style.background-color]="bgColor"
+  [style.color]="fontcolor"
+  placeholder="{{ c2cplaceholder }}"
+  type="{{ c2ctype }}"
+  name="{{ c2cname }}"
+  class="border border-2 px-4 py-2 w-full"
+  type="text"
+/>
 
+<!-- input field with emoji which contains tailwind classes  -->
+<input
+  type="text"
+  *ngIf="!Inputtype"
+  [style.background-color]="bgColor"
+  [style.color]="fontcolor"
+  placeholder="{{ c2cplaceholder }}"
+  type="{{ c2ctype }}"
+  name="{{ c2cname }}"
+  class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pr-10"
+/>
+<span
+  *ngIf="!Inputtype"
+  class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 right-0 pr-3 py-3"
+>
+  <i class="fas fa-user">{{ emoji[emojino] }}</i>
+</span>
 
-<div class="relative flex w-full flex-wrap items-stretch mb-3">
-    <input type="text" placeholder="Placeholder" class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pr-10"/>
-    <span class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 right-0 pr-3 py-3">
-      <i class="fas fa-user">&#128512;</i>
-    </span>
-  </div>
+<!-- class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pr-10" -->
