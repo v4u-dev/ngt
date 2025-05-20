@@ -1,0 +1,33 @@
+<!-- component -->
+
+<!-- Normal input Field -->
+<input
+  *ngIf="!!Inputtype"
+  [style.background-color]="bgColor"
+  [style.color]="fontcolor"
+  placeholder="{{ c2cplaceholder }}"
+  type="{{ c2ctype }}"
+  name="{{ c2cname }}"
+  class="border border-2 px-4 py-2 w-full"
+  type="text"
+/>
+
+<!-- input field with emoji which contains tailwind classes  -->
+<input
+  type="text"
+  *ngIf="!Inputtype"
+  [style.background-color]="bgColor"
+  [style.color]="fontcolor"
+  placeholder="{{ c2cplaceholder }}"
+  type="{{ c2ctype }}"
+  name="{{ c2cname }}"
+  class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pr-10"
+/>
+<span
+  *ngIf="!Inputtype"
+  class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 right-0 pr-3 py-3"
+>
+  <i class="fas fa-user">{{ emoji[emojino] }}</i>
+</span>
+
+<!-- class="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pr-10" -->
